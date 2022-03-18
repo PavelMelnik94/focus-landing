@@ -113,15 +113,18 @@ select:focus {
     }
     @include for-desktop-only {
         width: 1200px;
-        background-color: darkolivegreen;
     }
 
     @include for-tv-only {
         width: 1500px;
-        background-color: darkslateblue;
     }
 }
 
 .container-fluid {
     width: 100% !important;
+}
+
+.container-fluid-padding {
+    padding: 0 50px 0;
+    width: 100%;
 }
