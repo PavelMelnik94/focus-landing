@@ -4,7 +4,7 @@
 @import "./colors";
 
 html {
-    @include reset("SF Pro Display", $base-font-size, $black-text);
+    @include reset("SF Pro Display", $base-font-size, $black);
 
     @include for-phone-only {
         font-size: $mobile-font-size;
@@ -15,6 +15,20 @@ html {
     @include for-laptop-only {
         font-size: $laptop-font-size;
     }
+}
+
+h1,
+h2,
+h3,
+.text,
+.text-1,
+.text-2,
+.caption-text-1,
+.caption-text-2,
+.caption-text-3,
+.button-text,
+a {
+    display: block;
 }
 
 h1 {
@@ -95,7 +109,7 @@ a {
     text-decoration: none;
     letter-spacing: 0.03em;
 
-    color: $white-text;
+    color: $white;
     background-color: unset;
 
     font-size: 12px;

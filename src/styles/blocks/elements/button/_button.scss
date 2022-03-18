@@ -1,0 +1,30 @@
+.button {
+    width: 260px;
+    height: 60px;
+    display: flex;
+    @include box-center($justify: center, $align: center);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    outline: none;
+    box-shadow: none;
+    border:unset;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    border: 1px solid #000;
+    @include button-variant($color: $white, $background: $transparent,  $border-color: $white);
+    &:hover {
+        @include button-variant($color: $black, $background: $white, $border-color: $white);
+    }
+    &:active,
+    &:focus {
+        outline: unset;
+        box-shadow: unset;
+        border:unset;
+    }
+
+
+}
+
