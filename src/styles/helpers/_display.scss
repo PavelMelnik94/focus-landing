@@ -19,8 +19,7 @@
 }
 
 .f-center {
-    justify-content: center;
-    align-items: center;
+    @include box-center(center, center);
 }
 
 .f-around {

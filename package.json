@@ -46,6 +46,8 @@
 		"> 1%"
 	],
 	"dependencies": {
+		"gulp-file-include": "^2.3.0",
+		"umbrellajs": "^3.3.1",
 		"vinyl": "^2.2.1"
 	}
 }

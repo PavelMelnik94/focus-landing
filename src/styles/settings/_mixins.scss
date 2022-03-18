@@ -1,5 +1,4 @@
 @import "./variables";
-// брейкпоинты
 @mixin for-phone-only {
     @media only screen and (min-width: 320px) and (max-width: 639.98px) {
         @content;
@@ -28,17 +27,13 @@
     }
 }
 
-// перевод в rem на основе $base-font-size
 @function stripUnit($value) {
     @return $value / ($value * 0 + 1);
 }
 @function rem($pxValue) {
     @return #{stripUnit($pxValue) / stripUnit($base-font-size)}rem;
 }
-//====
 
-//миксин принимает пк размер и мобильный размер, а далее делает безшовный переход
-// настроен на брейкпоинты выше  и $maxWidth.
 @mixin adaptiv-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
     $addMobSize: $addSize + $addSize * 0.7;
@@ -56,7 +51,6 @@
     }
 }
 
-// Reset Mixin
 @mixin reset($font-family, $font-size, $color) {
     box-sizing: border-box;
     margin: 0;

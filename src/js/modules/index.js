@@ -1,3 +1,4 @@
+import u from 'umbrellajs';
 import './accordion';
 import './dropdown';
 
