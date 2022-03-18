@@ -1,0 +1,57 @@
+@import "./fontface";
+@import "./variables";
+@import "./mixins";
+@import "./colors";
+
+html {
+    @include reset("Roboto", $base-font-size, $dark);
+
+    @include for-phone-only {
+        font-size: $mobile-font-size;
+    }
+    @include for-tablet-only {
+        font-size: $tablet-font-size;
+    }
+    @include for-laptop-only {
+        font-size: $laptop-font-size;
+    }
+}
+
+.box {
+    width: rem(250px);
+    height: rem(250px);
+    border: 1px solid black;
+    @include for-phone-only {
+        width: rem(200px);
+        height: rem(200px);
+    }
+}
+h1 {
+    //   @include adaptiv-font(55, 25);
+    font-size: rem(55px);
+    margin-bottom: rem(15px);
+}
+
+h2 {
+    @include adaptiv-font(40, 18);
+}
+
+h3 {
+}
+
+h4 {
+}
+
+h5 {
+}
+
+h6 {
+}
+
+p {
+    @include adaptiv-font(14, 12);
+}
+
+a {
+    @include adaptiv-font(14, 12);
+}

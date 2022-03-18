@@ -1,0 +1,28 @@
+// BREAKPOINT VARS
+
+$bp-small: 640px !default;
+$bp-medium: 1024px !default;
+$bp-large: 1280px !default;
+$bp-xlarge: 1920px !default;
+// ==============================
+
+// FONT VART
+$base-font-size: 18px; //desktop
+$laptop-font-size: 15px; //laptop
+$tablet-font-size: 14px; //tablet
+$mobile-font-size: 12px; //mobile
+
+// ==============================
+
+// DISPLAY VARS
+$maxWidth: 1200;
+// ==============================
+
+// включить если верстаю без макета.
+// все заголовки будут основаны на базовом шрифте.
+// $h1-font-size: $base-font-size * 2.5;
+// $h2-font-size: $base-font-size * 2;
+// $h3-font-size: $base-font-size * 1.75;
+// $h4-font-size: $base-font-size * 1.5;
+// $h5-font-size: $base-font-size * 1.25;
+// $h6-font-size: $base-font-size;
