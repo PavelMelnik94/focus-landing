@@ -1,0 +1,18 @@
+.arrow {
+    display: flex;
+    @include box-center(center, center);
+    width: 25px;
+    height: 50px;
+    cursor: pointer;
+    svg {
+        fill: $white;
+    }
+    &--left {
+
+            transform: rotate(180deg);
+
+    }
+    &--right {
+        transform: rotate(0deg);
+    }
+}

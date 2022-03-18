@@ -1,8 +1,7 @@
-a[href^='http']:empty::before {
-    content: attr(href);
-}
+// a[href^='http']:empty::before {
+//     content: attr(href);
+// }
 
-//img
 
 img {
     position: relative;
@@ -15,7 +14,7 @@ img {
 
     text-align: center;
 
-    background-color: #fff;
+    background-color: $transparent;
 
     background-image: url('./../../img/no-photo.svg');
     background-repeat: no-repeat;
@@ -24,11 +23,6 @@ img {
     font-weight: 300;
     line-height: 2;
     object-fit: cover;
-}
-
-.test {
-    width: 500px;
-    height: 500px;
 }
 
 img::after {

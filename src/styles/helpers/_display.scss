@@ -18,6 +18,14 @@
     display: flex;
 }
 
+.flex-row {
+    flex-direction: row !important;
+}
+
+.flex-column {
+    flex-direction: column !important;
+}
+
 .f-center {
     @include box-center(center, center);
 }

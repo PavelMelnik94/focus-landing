@@ -1,4 +1,5 @@
 import u from 'umbrellajs';
+import './../js/modules/slider'
 import './debug';
 import './modules/index';
 

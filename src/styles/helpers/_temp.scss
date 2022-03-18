@@ -42,6 +42,10 @@
     padding: 1rem;
     background-color: black;
     width: 100%;
+    height: fit-content;
+}
+&-slider {
+    width: 600px;
     height: 500px;
 }
 }
