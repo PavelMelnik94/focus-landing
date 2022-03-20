@@ -22,11 +22,8 @@
 	</script>
 
 
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/styles.min.css" />
-	<link
-rel="stylesheet"
-href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-/>
 </head>
 
 <body>
@@ -70,74 +67,66 @@ href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
 						</div>
 
 					</div>
-					<div class="m10 design-slider">
 
 
-						<div class="slider" data-pos="0">
-							<div class="arrow-wrap arrow-wrap--left">
+					<!-- swiper -->
+					<!-- Slider main container -->
+					<div class="swiper swiper--fluid swiper--size-big">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<div class="swiper-slide">
+								<img
+									src='https://images.unsplash.com/photo-1606103920295-9a091573f160?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
+									alt="1">
+							</div>
+							<div class="swiper-slide">
+								<img
+									src="https://images.unsplash.com/photo-1480554840075-72cbdabbf689?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+									alt="2">
+							</div>
+							<div class="swiper-slide">
+								<img
+									src="https://images.unsplash.com/photo-1564650211163-21049f1b683a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1198&q=80"
+									alt="3">
+							</div>
+							...
+						</div>
+						<!-- If we need pagination -->
+						<div class="swiper-pagination slider-pagination">
+							<span class="swiper-pagination-bullet"></span>
+							<span class="swiper-pagination-bullet-active"></span>
+						</div>
+
+						<!-- If we need navigation buttons -->
+						<div class="arrow-wrap arrow-wrap--left">
+							<div class="swiper-button-prev">
 								<div class="arrow arrow--left">
 									<img src="./icons/accordion/arrow.svg" alt="arrow"> </img>
 								</div>
 							</div>
-							<div class="arrow-wrap arrow-wrap--right">
+						</div>
+						<div class="arrow-wrap arrow-wrap--right">
+							<div class="swiper-button-next">
 								<div class="arrow arrow--right">
 									<img src="./icons/accordion/arrow.svg" alt="arrow"> </img>
 								</div>
 							</div>
-							<div class="slider__slides">
-								<div class="slider__slide">
-									<img
-										src='https://images.unsplash.com/photo-1606103920295-9a091573f160?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80' />
-								</div>
-								<div class="slider__slide">
-									<img
-										src='https://images.unsplash.com/photo-1543164888-462c8603cbd9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80' />
-								</div>
-								<div class="slider__slide">
-									<img
-										src='https://images.unsplash.com/photo-1480554840075-72cbdabbf689?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80' />
-								</div>
-								<div class="slider__slide">
-									<img
-										src='https://images.unsplash.com/photo-1564650211163-21049f1b683a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1198&q=80' />
-								</div>
-							</div>
-							<div class="slider__dots">
-								<a href="" class="slider__indicator"></a>
-								<a href="" class="slider__dot" data-pos="0"></a>
-								<a href="" class="slider__dot" data-pos="1"></a>
-								<a href="" class="slider__dot" data-pos="2"></a>
-								<a href="" class="slider__dot" data-pos="3"></a>
-							</div>
 						</div>
 
+						<!-- If we need scrollbar -->
+						<!-- <div class="swiper-scrollbar"></div> -->
 					</div>
+					<!-- swiper end -->
 
 				</div>
+
 			</div>
 
-  <!-- Slider main container -->
-<div class="swiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
-    ...
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
 
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"> back</div>
-  <div class="swiper-button-next"> next </div>
-
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
-</div>
 
 
 			<script src="js/script.bundle.js"></script>
 </body>
+
 </html>
