@@ -1,0 +1,14 @@
+.card {
+  position: relative;
+  width: 570px;
+  height: 992px;
+  // border: 1px solid white;
+  color: $white;
+  &__image {
+    width: 100%;
+    height: 692px;
+  }
+
+  &__body {
+  }
+}

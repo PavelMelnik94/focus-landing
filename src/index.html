@@ -15,9 +15,9 @@
  -->
 	<!-- Больше информации: http://prgssr.ru/development/tehniki-prefetchinga-dlya-uluchsheniya-proizvoditelnosti-sajtov.html -->
 	<script>
-		if (!(window.fetch && window.Promise && [].includes && Object.assign && window.Map)) {
+		if ( !( window.fetch && window.Promise && [].includes && Object.assign && window.Map ) ) {
 			document
-				.write('<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch"></scr' + 'ipt>')
+				.write( '<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch"></scr' + 'ipt>' )
 		}
 	</script>
 
@@ -36,16 +36,21 @@
 				<div class="box-3"> </div>
 				<div class="box-4"> </div>
 			</div>
+
 			<h1 class="mt10">header 1</h1>
 			<h2 class="mt10">header 2</h2>
 			<h3 class="mt10">header 3</h3>
+
 			<div class="mt10 text">text</div>
 			<div class="mt10 text-1">text 1</div>
 			<div class="mt10 text-2">text 2</div>
+
 			<div class="mt10 caption-text-1">caption text 1</div>
 			<div class="mt10 caption-text-2">caption text 2</div>
 			<div class="mt10 caption-text-3">caption text 3</div>
+
 			<div class="mt10 button-text">button text</div>
+
 			<div class="bg-black mt10 p10">
 				<a href="#" class="p15 button-text">link</a>
 			</div>
@@ -119,14 +124,108 @@
 					</div>
 					<!-- swiper end -->
 
+					<!-- start card -->
+					<div class="card mt40">
+						<div class="card__image mb50">
+							<img src="./img/card/1.jpg" alt="1">
+						</div>
+
+						<div class="card__body">
+							<div class="card__title mb25">
+								<h3>Апартаметы</h3>
+							</div>
+							<div class="card__text mb50">
+								<p>Со второго по шестой этаж гармонично спланированы апартаменты различной площади от 35 до 80 м2,
+									жителям каждого из которых гарантирована максимальная приватность и комфорт.</p>
+							</div>
+							<div class="card__button">
+								<a href="#" class="button button--white">записаться на просмотр</a>
+							</div>
+						</div>
+					</div>
+					<!-- end card -->
+
+
+
 				</div>
 
 			</div>
+		</div>
+	</div>
 
 
+	<footer class="footer mt40">
+		<div class="container">
+			<div class="footer__content d-flex">
+				<div class="footer__feedback">
+
+					<h2 class="footer__title mb25">Запишитесь на консультацию</h2>
+					<span class="footer__subtitle caption-text-1 mb50">
+						Оставьте контактные данные — мы перезвоним в течение 15 минут
+					</span>
+
+					<form action="" class="feedback-form">
+						<div class="form__group mb25">
+							<input type="text" class="feedback-form__input text-2" minlength="2" placeholder="Имя">
+						</div>
+						<div class="form__group">
+							<input type="text" class="feedback-form__input text-2" placeholder="Телефон">
+						</div>
+
+						<div class="form__group mt50">
+							<!-- <input type="checkbox" class="feedback-form__checkbox " ></input> -->
+							<label class="feedback-form__checkbox container-checkbox">
+								<input type="checkbox" checked="checked">
+								<span class="checkmark"></span>
+							</label>
+							<div class="feedback-form__policy mb50">
+								<span class="caption-text-3 o6"> Я принимаю условия </span>
+								<a href="!#">Политики конфиденциальности</a>
+							</div>
+						</div>
+
+						<div class="form__group">
+							<button class="button ">Отправить</button>
+						</div>
+
+				</div>
+
+				<div class="footer__info">
+					<h2 class="mb25">8 (960) 979 47 72</h2>
+					<span class="text-2 mb15">Москва, ул. Климашкина, 16
+						ЦАО Пресненский район</span>
+					<span class="text-2 o6 mb50">Пн-Вс: с 9:00 до 20:00</span>
+
+					<div class="footer__social">
+						<a href="!#" class="footer__social-item">
+							<img class="o6" src="./icons/social/fb.svg" alt="facebook">
+						</a>
+						<a href="!#" class="footer__social-item">
+							<img class="o6" src="./icons/social/inst.svg" alt="instagram">
+						</a>
+						<a href="!#" class="footer__social-item">
+							<img class="o6" src="./icons/social/tw.svg" alt="twitter">
+						</a>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="footer__divider mt100 o3 "></div>
+
+		<div class="footer__copyright w100 d-flex f-between mt25">
+			<span class="o3 caption-text-3 text-upper  ">© Focus 2020</span>
+
+			<span>
+				<span class="caption-text-3 o6">Разработка сайта </span>
+				<a href="https://www.uprock.ru/">UPROCK</a>
+			</span>
+
+		</div>
+	</footer>
 
 
-			<script src="js/script.bundle.js"></script>
+	<script src="js/script.bundle.js"></script>
 </body>
 
 </html>

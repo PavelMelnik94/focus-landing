@@ -1,9 +1,16 @@
-@import "button/button";
+@import 'button/button';
 
-@import "slider/swiper.scss";
-@import "slider/arrow.scss";
+//slider
+@import 'slider/swiper.scss';
+@import 'slider/arrow.scss';
 
-@import "checkbox";
-@import "placeholder";
-@import "radio";
-@import "scrollbar";
+//card
+@import 'card/card.scss';
+
+//feedback
+
+@import 'placeholder';
+@import 'radio';
+@import 'scrollbar';
+@import 'feedback/feedback-form.scss';
+// @import 'checkbox';
