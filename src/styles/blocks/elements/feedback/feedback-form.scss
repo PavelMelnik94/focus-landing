@@ -1,6 +1,8 @@
 .feedback-form {
   &__input {
+    width: 450px;
     padding: 0;
+    padding-bottom: 15px;
     background-color: $background-footer;
     border: none;
     border-bottom: 1px solid $white;

@@ -4,7 +4,7 @@
 @import './colors';
 
 html {
-  @include reset('SF Pro Display', $base-font-size, $black);
+  @include reset('SF Pro Display', $base-font-size, $white);
 
   @include for-phone-only {
     font-size: $mobile-font-size;
@@ -27,14 +27,14 @@ h3,
 .caption-text-2,
 .button-text,
 a {
-  display: block;
+  display: inline-block;
 }
 
 h1 {
   margin-bottom: rem(15px);
 
   letter-spacing: 0.3em;
-
+  text-transform: uppercase;
   font-size: rem(160px);
   font-weight: 400;
   line-height: 191px;
@@ -42,7 +42,6 @@ h1 {
 
 h2 {
   letter-spacing: 0.01em;
-
   font-size: rem(29px);
   font-weight: 500;
   line-height: 35px;
@@ -104,6 +103,7 @@ h3 {
 
 a {
   display: inline-block;
+
   cursor: pointer;
   text-decoration: none;
   letter-spacing: 0.03em;
@@ -119,4 +119,11 @@ a {
 
     border: none;
   }
+}
+
+.text--white {
+  color: $white;
+}
+.text--black {
+  color: $black;
 }

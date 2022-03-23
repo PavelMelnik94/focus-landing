@@ -1,0 +1,24 @@
+.about {
+  background-color: $black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  &__content {
+    width: 1022px;
+  }
+}
+
+.acticle {
+  width: 553px;
+  h2 {
+    text-align: left;
+    margin-bottom: 50px;
+  }
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 90px;
+  width: 215.9px;
+  height: 254px;
+}

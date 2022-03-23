@@ -35,10 +35,9 @@ dd {
 
 /* Выставляем основные настройки по-умолчанию для body */
 body {
+  width: 100%;
   overflow-x: hidden;
-
-  min-height: 100vh;
-
+  position: relative;
   line-height: 1.5;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
@@ -128,15 +127,6 @@ select:focus {
 }
 
 .container-fluid {
-  width: 100% !important;
-}
-
-.container-fluid-padding {
+  margin: 0 auto;
   width: 100%;
-  padding: 0 50px 0;
-}
-
-.text-white {
-  text-align: center;
-  color: $white;
 }

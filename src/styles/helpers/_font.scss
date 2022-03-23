@@ -1,36 +1,36 @@
 @import './../settings/variables';
 
 .fz-16 {
-  font-size: rem(16px);
+    font-size: rem(16px);
 }
 
 .fz-20 {
-  font-size: rem(20px);
+    font-size: rem(20px);
 }
 
 .fz-24 {
-  font-size: rem(24px);
+    font-size: rem(24px);
 }
 
 .bold {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .thin {
-  font-weight: 300;
+    font-weight: 300;
 }
 
 .italic {
-  font-style: italic;
+    font-style: italic;
 }
 
 .text-color-dark {
-  color: $black;
+    color: $black;
 }
 .text-color-white {
-  color: $white;
+    color: $white;
 }
 
 .text-upper {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
