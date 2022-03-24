@@ -1,2 +1,19 @@
 .benefits {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: $black;
+  &__wrapper {
+    width: 1165px;
+    height: 460px;
+  }
+  &__img {
+    width: 570px;
+    height: 100%;
+  }
+  &__content {
+    width: 535px;
+    h2 {
+      margin-bottom: 50px;
+    }
+  }
 }

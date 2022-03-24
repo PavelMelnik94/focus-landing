@@ -3,13 +3,14 @@
     width: 450px;
     padding: 0;
     padding-bottom: 15px;
+    padding-left: 3px;
     background-color: $background-footer;
     border: none;
-    border-bottom: 1px solid $white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
     caret-color: $white;
     color: $white;
     &:focus {
-      border-bottom: 1px solid $white;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.6);
     }
   }
   &__policy {
