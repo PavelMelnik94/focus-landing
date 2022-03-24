@@ -14,7 +14,12 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 21px;
-
+  @include box-center($justify: center, $align: center);
+  @include button-variant(
+    $color: $white,
+    $background: $transparent,
+    $border-color: $white
+  );
   &:hover {
     @include button-variant(
       $color: $black,
@@ -28,10 +33,20 @@
     outline: unset;
     box-shadow: unset;
   }
-  @include box-center($justify: center, $align: center);
-  @include button-variant(
-    $color: $white,
-    $background: $transparent,
-    $border-color: $white
-  );
+
+  &--white {
+    @include button-variant(
+      $color: $black,
+      $background: $white,
+      $border-color: $white
+    );
+
+    &:hover {
+      @include button-variant(
+        $color: $white,
+        $background: $transparent,
+        $border-color: $white
+      );
+    }
+  }
 }
