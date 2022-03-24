@@ -1,0 +1,21 @@
+.apps {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: $black;
+  .container {
+  }
+  &__content {
+    width: 1200px;
+    height: 1125px;
+  }
+  &__caption {
+    margin-bottom: 50px;
+    h2 {
+      margin-bottom: 25px;
+    }
+    .text-caption-1 {
+    }
+  }
+  &__card-wrapper {
+  }
+}
