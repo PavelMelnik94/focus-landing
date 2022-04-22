@@ -1,8 +1,6 @@
 import {
 	getOne,
 	setStyle,
-	isVisibleinViewport,
-	debounce
 } from './../utils.js';
 
 const nav = getOne('.advantages__navigation');
@@ -11,38 +9,38 @@ const navCollection = [...nav.children];
 const dividersParent = getOne('.advantages__content--center');
 const dividerCollection = [...dividersParent.children];
 
-const img = getOne('.advantages__content--right > img');
+const imgParent = getOne('.advantages__content--right');
+const imgCollection = [...imgParent.children];
 
 
-window.addEventListener('load', () => {
-	let count = 1;
-
-	while (count != 8) {
-		const linkNode = document.createElement('link');
-		linkNode.rel = 'preload';
-		linkNode.href = `./img/advantages/${count}.webp`;
-		document.querySelector('head').appendChild(linkNode);
-		count++;
-	}
-});
-
-const setPicUrl = (i) => `./img/advantages/${i}.webp`;
-
-const hideAllDividers = () => {
-	dividerCollection?.forEach((el) => {
-		setStyle(el, 'visibility', 'hidden');
-	});
+const hide = {
+	AllDividers: () => {
+		dividerCollection?.forEach((el) => {
+			setStyle(el, 'visibility', 'hidden');
+		});
+	},
+	AllPics: () => {
+		imgCollection.forEach((el) => {
+			setStyle(el, 'display', 'none');
+		});
+	},
+	AllEntity: () => {
+		hide.AllDividers();
+		hide.AllPics();
+		return null;
+	},
 };
 
 navCollection?.forEach((item, index) => {
 	item.addEventListener('click', (e) => {
 		e.preventDefault();
 
-		hideAllDividers();
-		const currDiv = document.getElementById(`d${index}`);
-		setStyle(currDiv, 'visibility', 'visible');
+		hide.AllEntity();
+		const currDivider = document.getElementById(`d${index}`);
+		setStyle(currDivider, 'visibility', 'visible');
 
-		img.setAttribute('src', setPicUrl(index + 1));
+		const currImg = document.getElementById(`pic${index}`);
+		setStyle(currImg, 'display', 'block ');
 	});
 });
 

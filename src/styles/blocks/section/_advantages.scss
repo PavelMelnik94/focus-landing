@@ -7,13 +7,13 @@
 		height: 460px;
 
 		&--left {
+			width: 100%;
 		}
 
 		&--center {
-			padding-top: calc(29px + 45px);
 			width: 300px;
 			height: calc(460px - (29px + 45px));
-			padding-top: 83px;
+			padding-right: 30px;
 		}
 
 		&--right {
