@@ -1,38 +1,41 @@
 .about {
-	background-color: $black;
-	padding-top: 100px;
-	padding-bottom: 100px;
-	&__content {
-		width: 1022px;
-	}
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    background-color: $black;
+    &__content {
+        width: 1022px;
+    }
 }
 
 .acticle {
-	width: 553px;
-	h2 {
-		text-align: left;
-		margin-bottom: 50px;
-	}
+    width: 553px;
+    h2 {
+        margin-bottom: 50px;
+
+        text-align: left;
+    }
 }
 
 .metrics {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 90px;
-	width: 215.9px;
-	height: 254px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 90px;
+
+    width: 215.9px;
+    height: 254px;
 }
 
 @include for-tablet-only {
-	.about {
-		padding-top: 75px;
-		padding-bottom: 75px;
-		&__content {
-			width: 838px;
-		}
-	}
+    .about {
+        padding-top: 75px;
+        padding-bottom: 75px;
+        &__content {
+            width: 838px;
+        }
+    }
 
-	.acticle {
-		width: 480px;
-	}
+    .acticle {
+        width: 480px;
+    }
 }

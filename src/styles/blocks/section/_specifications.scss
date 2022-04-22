@@ -1,37 +1,40 @@
 .specifications {
-	padding-top: 100px;
-	padding-bottom: 100px;
-	background-color: $black;
-	&__content {
-		height: 560px;
-	}
-	h2 {
-		margin-bottom: 50px;
-	}
-	&__haracteristics {
-		width: 1197px;
-		display: grid;
-		grid-template-rows: repeat(3, 1fr);
-		grid-template-columns: repeat(3, 1fr);
-		row-gap: 100px;
-	}
-	&__item {
-		display: inline-flex;
-		flex-direction: column;
-		width: 286px;
-		height: 100px;
-		&-text {
-			margin-bottom: 25px;
-		}
-	}
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    background-color: $black;
+    &__content {
+        height: 560px;
+    }
+    h2 {
+        margin-bottom: 50px;
+    }
+    &__haracteristics {
+        display: grid;
+
+        width: 1197px;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 100px;
+    }
+    &__item {
+        display: inline-flex;
+        flex-direction: column;
+
+        width: 286px;
+        height: 100px;
+        &-text {
+            margin-bottom: 25px;
+        }
+    }
 }
 
 @include for-tablet-only {
-	.specifications {
-		padding-top: 75px;
-		padding-bottom: 75px;
-		&__haracteristics {
-			width: 100%;
-		}
-	}
+    .specifications {
+        padding-top: 75px;
+        padding-bottom: 75px;
+        &__haracteristics {
+            width: 100%;
+        }
+    }
 }

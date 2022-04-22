@@ -4,19 +4,19 @@
 @import './colors';
 
 html {
-		@include reset('SF Pro Display', $base-font-size, $white);
+    @include reset('SF Pro Display', $base-font-size, $white);
 
-		@include for-phone-only {
-				font-size: $mobile-font-size;
-		}
+    @include for-phone-only {
+        font-size: $mobile-font-size;
+    }
 
-		@include for-tablet-only {
-				font-size: $tablet-font-size;
-		}
+    @include for-tablet-only {
+        font-size: $tablet-font-size;
+    }
 
-		@include for-laptop-only {
-				font-size: $laptop-font-size;
-		}
+    @include for-laptop-only {
+        font-size: $laptop-font-size;
+    }
 }
 
 h1,
@@ -29,119 +29,123 @@ h3,
 .caption-text-2,
 .button-text,
 a {
-		display: inline-block;
+    display: inline-block;
 }
 
 a {
-		font-family: 'SF Pro Display';
-		font-style: normal;
-		font-weight: 300;
-		font-size: 12px;
-		line-height: 14px;
-		letter-spacing: 0.03em;
-		color: #FFFFFF;
+    letter-spacing: 0.03em;
 
-		&:hover {
-				opacity: 0.3;
-		}
+    color: #FFFFFF;
+
+    font-family: 'SF Pro Display';
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 14px;
+
+    &:hover {
+        opacity: 0.3;
+    }
 }
 
 h1 {
-		margin-bottom: rem(15px);
+    margin-bottom: rem(15px);
 
-		letter-spacing: 0.3em;
-		text-transform: uppercase;
-		font-size: rem(160px);
-		font-weight: 400;
-		line-height: 191px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+
+    font-size: rem(160px);
+    font-weight: 400;
+    line-height: 191px;
 }
 
 h2 {
-		letter-spacing: 0.01em;
-		font-size: rem(29px);
-		font-weight: 500;
-		line-height: 35px;
+    letter-spacing: 0.01em;
+
+    font-size: rem(29px);
+    font-weight: 500;
+    line-height: 35px;
 }
 
 h3 {
-		letter-spacing: 0.01em;
+    letter-spacing: 0.01em;
 
-		font-size: rem(29px);
-		font-weight: 400;
-		line-height: 35px;
+    font-size: rem(29px);
+    font-weight: 400;
+    line-height: 35px;
 }
 
 .text {
-		align-items: center;
+    align-items: center;
 
-		font-size: rem(45px);
-		font-weight: 400;
-		line-height: 54px;
+    font-size: rem(45px);
+    font-weight: 400;
+    line-height: 54px;
 }
 
 .text-1 {
-		font-size: rem(18px);
-		font-weight: 400;
-		line-height: 25px;
+    font-size: rem(18px);
+    font-weight: 400;
+    line-height: 25px;
 }
 
 .text-2 {
-		font-size: rem(18px);
-		font-weight: 400;
-		line-height: 25px;
+    font-size: rem(18px);
+    font-weight: 400;
+    line-height: 25px;
 }
 
 .caption-text-1 {
-		font-size: rem(18px);
-		font-weight: 300;
-		line-height: 22px;
+    font-size: rem(18px);
+    font-weight: 300;
+    line-height: 22px;
 }
 
 .caption-text-2 {
-		font-size: rem(12px);
-		font-weight: 400;
-		line-height: 14px;
+    font-size: rem(12px);
+    font-weight: 400;
+    line-height: 14px;
 }
 
 .caption-text-3 {
-		letter-spacing: 0.03em;
+    letter-spacing: 0.03em;
 
-		font-size: rem(12px);
-		font-weight: 300;
-		line-height: 14px;
+    font-size: rem(12px);
+    font-weight: 300;
+    line-height: 14px;
 }
 
 .button-text {
-		font-size: rem(18px);
-		font-weight: 500;
-		line-height: 21px;
+    font-size: rem(18px);
+    font-weight: 500;
+    line-height: 21px;
 }
 
 a {
-		display: inline-block;
+    display: inline-block;
 
-		cursor: pointer;
-		text-decoration: none;
-		letter-spacing: 0.03em;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 0.03em;
 
-		color: $white !important;
-		background-color: unset;
+    color: $white !important;
+    background-color: unset;
 
-		font-size: 12px;
-		font-weight: 300;
-		line-height: 14px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
 
-		&:active &:focus {
-				text-decoration: none;
+    &:active &:focus {
+        text-decoration: none;
 
-				border: none;
-		}
+        border: none;
+    }
 }
 
 .text--white {
-		color: $white;
+    color: $white;
 }
 
 .text--black {
-		color: $black;
+    color: $black;
 }

@@ -1,35 +1,35 @@
 .d-block {
-		display: block;
+    display: block;
 }
 
 .d-flex {
-		display: flex;
+    display: flex;
 }
 
 .f-row {
-		flex-direction: row !important;
+    flex-direction: row !important;
 }
 
 .f-col {
-		flex-direction: column !important;
+    flex-direction: column !important;
 }
 
 .f-center {
-		@include box-center(center, center);
+    @include box-center(center, center);
 }
 
 .f-around {
-		justify-content: space-around;
+    justify-content: space-around;
 }
 
 .f-between {
-		justify-content: space-between;
+    justify-content: space-between;
 }
 
 .f-start {
-		justify-content: flex-start;
+    justify-content: flex-start;
 }
 
 .f-end {
-		justify-content: flex-end;
+    justify-content: flex-end;
 }

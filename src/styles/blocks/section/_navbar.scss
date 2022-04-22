@@ -1,12 +1,15 @@
 .navbar-wrapper {
-    padding-top: 25px;
-    width: 100vw;
-    background-color: #1818187e;
     position: fixed;
-    left: 0;
     z-index: 100000;
-    height: 75px;
+    left: 0;
+
     display: block;
+
+    width: 100vw;
+    height: 75px;
+    padding-top: 25px;
+
+    background-color: #1818187e;
     .container {
         position: relative;
         header {
@@ -17,13 +20,16 @@
 
 @include for-tablet-only {
     .navbar-wrapper {
-        padding-top: 5px;
-        width: 100vw;
-        background-color: #1818187e;
         position: fixed;
-        left: 0;
         z-index: 100000;
-        height: 62px;
+        left: 0;
+
         display: block;
+
+        width: 100vw;
+        height: 62px;
+        padding-top: 5px;
+
+        background-color: #1818187e;
     }
 }

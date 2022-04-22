@@ -1,34 +1,34 @@
 .hidden {
-	visibility: hidden;
+    visibility: hidden;
 }
 
 .visible {
-	visibility: visible;
+    visibility: visible;
 }
 
 .d-none {
-	display: none;
+    display: none;
 }
 
 .visually-hidden {
-	position: absolute;
-	z-index: -100;
-	top: -150%;
+    position: absolute;
+    z-index: -100;
+    top: -150%;
 
-	visibility: hidden;
-	overflow: hidden;
+    visibility: hidden;
+    overflow: hidden;
 
-	width: 0;
-	height: 0;
-	margin: 0;
-	padding: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
 
-	cursor: none;
-	user-select: none;
-	white-space: nowrap;
-	pointer-events: none;
+    cursor: none;
+    user-select: none;
+    white-space: nowrap;
+    pointer-events: none;
 
-	opacity: 0;
-	border: none;
-	outline: none;
+    opacity: 0;
+    border: none;
+    outline: none;
 }

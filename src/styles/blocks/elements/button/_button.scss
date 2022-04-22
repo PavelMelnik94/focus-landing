@@ -1,52 +1,52 @@
 .button {
-  display: flex;
+    display: flex;
 
-  width: 260px;
-  height: 60px;
+    width: 260px;
+    height: 60px;
 
-  cursor: pointer;
+    cursor: pointer;
 
-  border: unset;
-  border: 1px solid #000;
-  outline: none;
-  box-shadow: none;
-
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 21px;
-  @include box-center($justify: center, $align: center);
-  @include button-variant(
-    $color: $white,
-    $background: $transparent,
-    $border-color: $white
-  );
-  &:hover {
-    @include button-variant(
-      $color: $black,
-      $background: $white,
-      $border-color: $white
-    );
-  }
-  &:active,
-  &:focus {
     border: unset;
-    outline: unset;
-    box-shadow: unset;
-  }
+    border: 1px solid #000;
+    outline: none;
+    box-shadow: none;
 
-  &--white {
-    @include button-variant(
-      $color: $black,
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    &:hover {
+        @include button-variant(
+            $color: $black,
       $background: $white,
       $border-color: $white
     );
+    }
+    &:active,
+    &:focus {
+        border: unset;
+        outline: unset;
+        box-shadow: unset;
+    }
 
-    &:hover {
-      @include button-variant(
-        $color: $white,
+    &--white {
+
+        &:hover {
+            @include button-variant(
+                $color: $white,
         $background: $transparent,
         $border-color: $white
       );
+        }
+        @include button-variant(
+            $color: $black,
+      $background: $white,
+      $border-color: $white
+    );
     }
-  }
+    @include box-center($justify: center, $align: center);
+    @include button-variant(
+        $color: $white,
+    $background: $transparent,
+    $border-color: $white
+  );
 }

@@ -1,10 +1,11 @@
 .presentation-slider {
-	padding-bottom: 100px;
-	background-color: $black;
+    padding-bottom: 100px;
+
+    background-color: $black;
 }
 
 @include for-tablet-only {
-	.presentation-slider {
-		padding-bottom: 75px;
-	}
+    .presentation-slider {
+        padding-bottom: 75px;
+    }
 }
