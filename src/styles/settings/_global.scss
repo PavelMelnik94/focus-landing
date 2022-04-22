@@ -112,11 +112,11 @@ select:focus {
 	@include for-tablet-only {
 		width: calc(100vw - 2.5rem);
 
-		background-color: lightseagreen;
+		// background-color: lightseagreen;
 	}
 
 	@include for-laptop-only {
-		width: 1000px;
+		width: 960px;
 
 		background-color: darkgoldenrod;
 	}

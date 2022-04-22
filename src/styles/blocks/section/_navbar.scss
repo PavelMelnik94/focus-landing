@@ -1,15 +1,29 @@
 .navbar-wrapper {
-	padding-top: 25px;
-	width: 100vw;
-	background-color: #1818187e;
-	position: fixed;
-	left: 0;
-	z-index: 10;
-	height: 75px;
-	.container {
-		position: relative;
-		header {
-			width: 100%;
-		}
-	}
+    padding-top: 25px;
+    width: 100vw;
+    background-color: #1818187e;
+    position: fixed;
+    left: 0;
+    z-index: 100000;
+    height: 75px;
+    display: block;
+    .container {
+        position: relative;
+        header {
+            width: 100%;
+        }
+    }
+}
+
+@include for-tablet-only {
+    .navbar-wrapper {
+        padding-top: 5px;
+        width: 100vw;
+        background-color: #1818187e;
+        position: fixed;
+        left: 0;
+        z-index: 100000;
+        height: 62px;
+        display: block;
+    }
 }

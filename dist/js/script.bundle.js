@@ -42,6 +42,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _uti
 
 /***/ }),
 
+/***/ "./src/js/modules/feedbackScreen.js":
+/*!******************************************!*\
+  !*** ./src/js/modules/feedbackScreen.js ***!
+  \******************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils */ \"./src/js/utils.js\");\n\r\n\r\nconst screen = (0,_utils__WEBPACK_IMPORTED_MODULE_0__.getOne)('.feedback-screen');\r\n\r\nconst openScreenBtn = document.getElementById('feedback-send');\r\nconst closeScreenBtn = document.getElementById('feedback-close');\r\n\r\nconst feedbackScreen = {\r\n    hide: () => (0,_utils__WEBPACK_IMPORTED_MODULE_0__.setStyle)(screen, 'display', 'none'),\r\n    show: () => (0,_utils__WEBPACK_IMPORTED_MODULE_0__.setStyle)(screen, 'display', 'block'),\r\n};\r\n\r\nopenScreenBtn.addEventListener('click', (e) => {\r\n    e.preventDefault();\r\n\r\n    feedbackScreen.show();\r\n});\r\n\r\ncloseScreenBtn.addEventListener('click', (e) => {\r\n    e.preventDefault();\r\n\r\n    feedbackScreen.hide();\r\n});\n\n//# sourceURL=webpack://modern-html-scaffolder/./src/js/modules/feedbackScreen.js?");
+
+/***/ }),
+
 /***/ "./src/js/modules/index.js":
 /*!*********************************!*\
   !*** ./src/js/modules/index.js ***!
@@ -49,7 +60,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _uti
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _accordion__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./accordion */ \"./src/js/modules/accordion.js\");\n/* harmony import */ var _dropdown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dropdown */ \"./src/js/modules/dropdown.js\");\n/* harmony import */ var _advantages__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./advantages */ \"./src/js/modules/advantages.js\");\n\r\n\r\n\r\n\r\n// (async function () {\r\n//   await import('./dropdown');\r\n//   await import('./accordion');\r\n// })();\n\n//# sourceURL=webpack://modern-html-scaffolder/./src/js/modules/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _accordion__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./accordion */ \"./src/js/modules/accordion.js\");\n/* harmony import */ var _dropdown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dropdown */ \"./src/js/modules/dropdown.js\");\n/* harmony import */ var _advantages__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./advantages */ \"./src/js/modules/advantages.js\");\n/* harmony import */ var _feedbackScreen__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./feedbackScreen */ \"./src/js/modules/feedbackScreen.js\");\n\r\n\r\n\r\n\r\n\r\n// (async function () {\r\n//   await import('./dropdown');\r\n//   await import('./accordion');\r\n// })();\n\n//# sourceURL=webpack://modern-html-scaffolder/./src/js/modules/index.js?");
 
 /***/ }),
 

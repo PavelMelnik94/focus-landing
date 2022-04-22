@@ -1,20 +1,37 @@
 .environment {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: $black;
-  .acticle {
-    width: 100%;
-    margin-bottom: 50px;
-    &__text-holder {
-      width: 20px;
-    }
-    &__title {
-      margin-bottom: 25px;
-    }
-    &__description {
-      width: 530px;
-      height: 75px;
-      padding-bottom: 7px;
-    }
-  }
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color: $black;
+	.acticle {
+		width: 100%;
+		margin-bottom: 50px;
+		&__text-holder {
+			width: 20px;
+		}
+		&__title {
+			margin-bottom: 25px;
+		}
+		&__description {
+			width: 530px;
+			height: 75px;
+			padding-bottom: 7px;
+		}
+	}
+}
+
+@include for-tablet-only {
+	.environment {
+		padding-top: 75px;
+		padding-bottom: 75px;
+		height: 584px;
+		.acticle {
+			margin-bottom: 50px;
+			&__title {
+				margin-bottom: 25px;
+			}
+			&__description {
+				width: 480px;
+			}
+		}
+	}
 }

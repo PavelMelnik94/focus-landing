@@ -1,5 +1,5 @@
 $bp-small: 640px !default;
-$bp-medium: 1024px !default;
+$bp-medium: 1000px !default;
 $bp-large: 1280px !default;
 $bp-xlarge: 1920px !default;
 
@@ -8,5 +8,6 @@ $laptop-font-size: 15px; //laptop
 $tablet-font-size: 14px; //tablet
 $mobile-font-size: 12px; //mobile
 
+$min-width: 320px;
 
 $maxWidth: 1200;

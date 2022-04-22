@@ -1,22 +1,24 @@
-@import 'button/button';
+@import "button/button";
 
 //slider
-@import 'slider/swiper';
-@import 'slider/arrow';
+@import "slider/swiper";
+@import "slider/arrow";
 
 //card
-@import 'card/card';
+@import "card/card";
 
 //feedback
-@import 'feedback/feedback-form';
+@import "feedback/feedback-form";
 
 //map
-@import 'map/map';
+@import "map/map";
 
 //navbar
-@import 'navbar/navbar';
+@import "navbar/navbar";
 
-@import 'placeholder';
-@import 'radio';
-@import 'scrollbar';
+@import "placeholder";
+@import "radio";
+@import "scrollbar";
 // @import 'checkbox';
+
+@import "feedback_screen/feedback-screen";

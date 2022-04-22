@@ -1,0 +1,32 @@
+.feedback-screen {
+    position: absolute;
+    height: 631px;
+    width: 100%;
+    background-color: $background-footer;
+    z-index: 10;
+    top: 0;
+    display: none;
+    &__content {
+        height: 631px;
+    }
+    &__text {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    &__info,
+    &__text {
+        padding-top: 100px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@include for-tablet-only {
+    .feedback-screen {
+        height: 574px;
+        &__content {
+            height: 574px;
+        }
+    }
+}

@@ -5,17 +5,17 @@
 
 	.container-fluid {
 		width: calc(100% - 100px);
-		// padding-right: 50px;
-		// padding-left: 50px;
 	}
-	// @include for-desktop-only {
-	// }
-	// @include for-laptop-only {
-	// }
-	// @include for-tablet-only {
-	// }
-	// @include for-mobile-only {
-	// }
+}
+
+@include for-tablet-only {
+	.promo {
+		padding-top: 68px;
+		padding-bottom: 75px;
+		.container-fluid {
+			width: 100%;
+		}
+	}
 }
 
 .hero {
