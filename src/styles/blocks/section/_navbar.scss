@@ -1,0 +1,15 @@
+.navbar-wrapper {
+	padding-top: 25px;
+	width: 100vw;
+	background-color: #1818187e;
+	position: fixed;
+	left: 0;
+	z-index: 10;
+	height: 75px;
+	.container {
+		position: relative;
+		header {
+			width: 100%;
+		}
+	}
+}

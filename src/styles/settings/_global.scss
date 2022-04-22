@@ -39,7 +39,10 @@ body {
 	overflow-x: hidden;
 	position: relative;
 	line-height: 1.5;
-	scroll-behavior: smooth;
+}
+
+html {
+	scroll-behavior: auto;
 	text-rendering: optimizeSpeed;
 }
 

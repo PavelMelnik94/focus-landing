@@ -1,28 +1,28 @@
 .promo {
-  padding-top: 45px;
-  padding-bottom: 100px;
-  background-color: $black;
+	padding-top: calc(45px + 65px);
+	padding-bottom: 100px;
+	background-color: $black;
 
-  .container-fluid {
-    width: calc(100% - 100px);
-    // padding-right: 50px;
-    // padding-left: 50px;
-  }
-  // @include for-desktop-only {
-  // }
-  // @include for-laptop-only {
-  // }
-  // @include for-tablet-only {
-  // }
-  // @include for-mobile-only {
-  // }
+	.container-fluid {
+		width: calc(100% - 100px);
+		// padding-right: 50px;
+		// padding-left: 50px;
+	}
+	// @include for-desktop-only {
+	// }
+	// @include for-laptop-only {
+	// }
+	// @include for-tablet-only {
+	// }
+	// @include for-mobile-only {
+	// }
 }
 
 .hero {
-  padding-top: 95px;
-  height: 815px;
-  background-image: url('./../img/hero.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+	padding-top: 95px;
+	height: 815px;
+	background-image: url("./../img/hero.webp");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
